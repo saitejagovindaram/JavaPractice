@@ -1,0 +1,18 @@
+template1(mylist)::=<<
+$mylist:get();separator="\n"$
+>>
+get(element)::=<<
+insert into MyTable values($element$);
+>>
+
+template2(mylist)::=<<
+Select emp_id,emp_name from Employees where dept in ('$mylist;separator=","$');
+>>
+
+template3(mylist)::=<<
+Select emp_id,emp_name from Employees where dept in ($mylist:getElement();separator=","$);
+>>
+
+getElement(element)::=<<
+'$element$'
+>>

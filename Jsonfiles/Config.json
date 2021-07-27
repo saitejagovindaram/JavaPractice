@@ -1,0 +1,6 @@
+{
+
+  "jdbc_url" : "jdbc:postgresql://w3.training5.modak.com:5432/training_2021",
+  "username": "mt3080",
+  "password": "mt3080@m07y21"
+}

@@ -1,0 +1,7 @@
+template1(query)::=<<
+insert into dep_sg values (?,?)
+>>
+
+template2(query)::=<<
+delete from dep_sg where dep_id=?
+>>

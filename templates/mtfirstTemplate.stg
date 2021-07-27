@@ -1,0 +1,20 @@
+template1(mydata)::=<<
+The recived data is $mydata$
+>>
+
+template2(mydata)::=<<
+$mydata.s$
+$mydata.a$
+>>
+
+template3(myinput)::=<<
+$ myinput.keys : { k | $k$ = $myinput.(k)$ };separator="|" $
+>>
+
+template4(mylist)::=<<
+The list elements are
+$mylist:getallele();separator=","$
+>>
+getallele(x)::=<<
+'$x$'
+>>
